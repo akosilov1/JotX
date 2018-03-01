@@ -613,7 +613,7 @@ class CJot {
 		if ($modx->loadExtension('MODxMailer')){
 			$mail = $modx->mail;
 		} else {
-			include_once MODX_MANAGER_PATH . "includes/controls/class.phpmailer.php";
+			include_once MODX_MANAGER_PATH . "includes/controls/phpmailer/PHPMailer.php";
 			$mail = new PHPMailer();
 			//add smtp method by Dmi3yy
 			if ($modx->config['email_method'] == 'smtp') {
